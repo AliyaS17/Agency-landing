@@ -1,0 +1,108 @@
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('../fonts/open-sans-v34-latin-regular.woff2') format('woff2'), 
+         url('../fonts/open-sans-v34-latin-regular.woff') format('woff'); 
+  }
+  
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    src: local(''),
+         url('../fonts/open-sans-v34-latin-600.woff2') format('woff2'), 
+         url('../fonts/open-sans-v34-latin-600.woff') format('woff'); 
+  }
+  
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''),
+         url('../fonts/open-sans-v34-latin-700.woff2') format('woff2'), 
+         url('../fonts/open-sans-v34-latin-700.woff') format('woff'); 
+  }
+  
+@font-face {
+    font-family: 'Open Sans';
+    font-style: italic;
+    font-weight: 400;
+    src: local(''),
+         url('../fonts/open-sans-v34-latin-italic.woff2') format('woff2'), 
+         url('../fonts/open-sans-v34-latin-italic.woff') format('woff'); 
+  }
+  
+@font-face {
+    font-family: 'Open Sans';
+    font-style: italic;
+    font-weight: 800;
+    src: local(''),
+         url('../fonts/open-sans-v34-latin-800italic.woff2') format('woff2'), 
+         url('../fonts/open-sans-v34-latin-800italic.woff') format('woff'); 
+  }
+
+.page {
+     font-family: 'Open Sans';
+     font-style: normal;
+     font-weight: 400;
+     font-size: 16px;
+
+ }
+
+  /* Header */
+.header-wrapper {
+     padding-top: 29px;
+     background-color: #f6f2f2;
+ }
+
+.header {
+     display: flex;
+     justify-content: center;
+     width: 1249px;
+     min-height: 89px;
+     margin: 0 auto;
+     background-color: rgba(0,0,0,0.8);
+
+ }
+
+.site-menu {
+     margin-left: -30px;
+ }
+
+.menu-list {
+     display: flex;
+     flex-wrap: wrap;
+     margin: 0;
+     padding: 0;
+     list-style: none;
+ }
+ 
+.menu-list > li {
+     display: flex;
+     min-height: 89px;
+
+}
+
+.menu-link {
+     display: flex;
+     align-items: center;
+     padding: 0 30px;
+     font-family: 'Open Sans';
+     font-size: 14px;
+     line-height: 24px;
+     font-weight: 700;
+     text-transform: uppercase;
+     text-decoration: none;
+     color: #e0e0e0;
+
+ }
+
+.menu-link:hover {
+     background-color: #ff3f40; 
+ }
+
+.menu-active {
+     background-color: #ff3f40;
+}
