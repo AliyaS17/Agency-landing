@@ -434,9 +434,12 @@
 }
 
 .team__lead-photo {
+     width: 321px;
+     height: 458px;
+     margin-right: 65px;
+     background-color: #eb6d4a8f;
      object-position: bottom;
      object-fit: contain;
-     background-color: #ff3f40;
      grid-column: 1 / 2;
      grid-row: 1 / 3;
 }
@@ -472,6 +475,7 @@
      font-size: 18px;
      line-height: 24px;
      text-decoration: none;
+     margin-right: 30px;
      
 }
 
@@ -492,7 +496,9 @@
 
 .team__other-photo {
      display: block;
-     background-color: #ff3f40;
+     width: 197px;
+     height: 214px;
+     background-color: #d4dce680;;
       
 }
 
