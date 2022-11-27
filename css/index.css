@@ -621,6 +621,7 @@ button {
 }
 
 .feedback__header {
+     max-width: 752px;
      margin-bottom: 67px;
 }
 
@@ -636,9 +637,23 @@ button {
 .feedback__about {
      font-family:'Open Sans';
      font-size: 15.9953px;
-     width: 450px;
+     line-height: 1.75;
      margin: 0;
-     margin-bottom: 39px;
+     margin-bottom: 50px;
+}
+
+.feedback__body {
+     display: flex;
+     justify-content: space-between;
+     flex-wrap: wrap;
+
+}
+
+.feedback__form {
+     width: 731px;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-between;
 }
 
 .feedback__form > input::placeholder,
@@ -696,7 +711,8 @@ button {
      box-sizing: border-box;
      resize: none;
      width: 731px;
-     height: 239px;
+     height: 249px;
+     margin-bottom: 45px;
      padding: 31px 51px;
      background-color: rgba(0,0,0,0.1);
      border: none;
@@ -712,7 +728,7 @@ button {
 
 .contacts {
      width: 315;
-     padding: 141px 17px 141px 81px;
+     padding: 141px 17px 141px 79px;
 }
 
 .contacts__heading {
