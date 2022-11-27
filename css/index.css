@@ -52,19 +52,18 @@ button {
 }
 
 /* Page */
-
 .page {
      font-family: 'Open Sans';
      font-style: normal;
      font-weight: 400;
      font-size: 16px;
+     margin-bottom: 1000px;
 }
 
 .page__inner {
      display: block;
      width: 100%;
-     padding-top: 29px;
-     
+     padding-top: 29px;     
 }
 
 .page__inner_grey {
@@ -84,7 +83,6 @@ button {
 }
 
 /* Header */
-
 .header {
      display: flex;
      justify-content: center;
@@ -109,7 +107,6 @@ button {
 .site-menu__item {
      display: flex;
      min-height: 89px;
-
 }
 
 .site-menu__link {
@@ -123,7 +120,6 @@ button {
      text-transform: uppercase;
      text-decoration: none;
      color: #e0e0e0;
-
 }
 
 .site-menu__link:hover {
@@ -156,7 +152,6 @@ button {
      margin: 0;
      margin-bottom: 19px;
      margin-top: -15px;
-
 }
 
 .intro__span_special {
@@ -214,7 +209,6 @@ button {
      padding: 107px 0 90px;
      border-bottom: 2px solid #ececec;
      justify-content: space-between;
-
 }
 
 .services__info {
@@ -230,7 +224,6 @@ button {
      line-height: 55px;
      letter-spacing: 0.422159px;
      text-transform: uppercase;
-
 }
 
 .services__about {
@@ -306,7 +299,6 @@ button {
 }
 
 /* Feature */
-
 .feature {
      width: 1249px;
      margin: 0 auto;
@@ -328,7 +320,6 @@ button {
      text-transform: uppercase;
      color: #000000;
      text-align: center;
-
 }
 
 .feature__about {
@@ -339,7 +330,6 @@ button {
      font-size: 15.9953px;
      line-height: 28px;
      text-align: center;
-
 }
 
 .hor-line {
@@ -490,7 +480,6 @@ button {
      text-transform: uppercase;
      margin: 0;
      margin-bottom: 30px;
-
 }
 
 .team__lead-about {
@@ -570,7 +559,6 @@ button {
      align-items: center;
      width: 1249px;
      margin: 0 auto;
-     margin-bottom: 1000px;
      padding: 150px 0 140px;
 }
 
@@ -596,18 +584,16 @@ button {
 .subscribe__form {
      display: flex;
      flex-wrap: wrap;
-     gap: 22px;
-     
+     gap: 22px;    
 }
 
-.subscribe__input {
+.subscribe__email {
      width: 521px;
      height: 79px;
      padding: 0 36px;
      border: none;
      border-radius: 5px;
      background-color: #fff;
-
 }
 
 .subscribe__button {
@@ -625,5 +611,133 @@ button {
      border-radius: 5px;
      background-color: #ff2d2d;
      text-transform: uppercase;
+}
 
+/* Get in touch */
+.feedback {
+     width: 1249px;
+     margin: 0 auto;
+     padding: 104px 0 107px;
+}
+
+.feedback__header {
+     margin-bottom: 67px;
+}
+
+.feedback__heading {
+     font-family:'Open Sans';
+     font-size: 41.9876px;
+     font-weight: 700;
+     margin: 0;
+     margin-bottom: 35px;
+     text-transform: uppercase;
+}
+
+.feedback__about {
+     font-family:'Open Sans';
+     font-size: 15.9953px;
+     width: 450px;
+     margin: 0;
+     margin-bottom: 39px;
+}
+
+.feedback__form > input::placeholder,
+.feedback__form > textarea::placeholder {
+     color: #000;
+     font-family:'Open Sans';
+     font-size: 15.9134px;
+}
+
+.feedback__name {
+     box-sizing: border-box;
+     width: 339px;
+     height: 69px;
+     background-color: rgba(0,0,0,0.1);
+     border: none;
+     border-radius: 5px;
+     padding-left: 54px;
+     margin-right: 54px;
+     margin-bottom: 44px;
+     font-family:'Open Sans';
+     font-size: 15.9134px;
+}
+
+.feedback__name::placeholder {
+     color: #000;
+     font-family:'Open Sans';
+     font-size: 15.9134px;
+}
+
+.feedback__email {
+     box-sizing: border-box;
+     width: 339px;
+     height: 69px;
+     background-color: rgba(0,0,0,0.1);
+     border: none;
+     border-radius: 5px;
+     padding-left: 48px;
+     margin-bottom: 44px;
+     font-family:'Open Sans';
+     font-size: 15.9134px;    
+}
+
+.feedback__button {
+     width: 728px;
+     height: 72px;
+     border: none;
+     border-radius: 5px;
+     background-color: #ff3b3b;
+     font-family: 'Open Sans';
+     font-size: 17.9026px;
+     color: #fff;
+}
+
+.feedback__textarea {
+     box-sizing: border-box;
+     resize: none;
+     width: 731px;
+     height: 239px;
+     padding: 31px 51px;
+     background-color: rgba(0,0,0,0.1);
+     border: none;
+     border-radius: 5px;
+     font-family:'Open Sans';
+     font-size: 15.9134px;
+}
+
+.feedback__contacts {
+     color: #fff;
+     background-color: rgba(45, 45, 45, 1);
+}
+
+.contacts {
+     width: 315;
+     padding: 141px 17px 141px 81px;
+}
+
+.contacts__heading {
+     text-transform: uppercase;
+     font-family:'Open Sans';
+     font-size: 17.9026px;
+     font-weight: 700;
+     margin: 0;
+     margin-bottom: 30px;
+}
+
+.contacts__address {
+     font-family:'Open Sans';
+     font-size: 17.9026px;
+     margin-bottom: 27px;
+}
+
+.contacts__email {
+     display: block;
+     color: #fff;
+     font-family:'Open Sans';
+     margin-bottom: 20px;
+}
+
+.contacts__tel {
+     color: #fff;
+     font-family:'Open Sans';
 }
