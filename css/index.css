@@ -122,6 +122,7 @@ button {
 .site-menu__item {
      display: flex;
      min-height: 89px;
+     justify-content: center;
 }
 
 .site-menu__link {
@@ -132,6 +133,7 @@ button {
      font-size: 14px;
      line-height: 24px;
      font-weight: 700;
+     justify-content: center;
      text-transform: uppercase;
      text-decoration: none;
      color: #e0e0e0;
