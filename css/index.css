@@ -280,6 +280,7 @@ button {
      padding-bottom: 90px;
      border-bottom: 2px solid #ececec;
      justify-content: space-between;
+     flex-wrap: wrap;
 }
 
 .services__info {
@@ -959,6 +960,7 @@ button {
      display: flex;
      justify-content: space-between;
      align-items: center;
+     flex-wrap: wrap;
      position: relative;
      margin-top: 10px;
 }
