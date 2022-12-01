@@ -9,6 +9,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/index.css">
+        <script defer src="js/popap-menu.js"></script>
     </head>
     <body class="page">
         <div class="page__inner_intro page__inner_grey">
@@ -21,6 +22,14 @@
                     <li class="site-menu__item"><a class="site-menu__link" href="">Contact</a></li>
                 </ul>
             </nav>
+            <nav class="popap-menu">
+                <button class="popap-menu__button"></button>
+                <ul class="popap-menu__list hide">
+                <li class="popap-menu__item"><a class="popap-menu__link popap-menu__link_active" href="#">Home</a></li>
+                <li class="popap-menu__item"><a class="popap-menu__link" href="#feature">Portfolio</a></li>
+                <li class="popap-menu__item"><a class="popap-menu__link" href="#team">About us</a></li>
+                <li class="popap-menu__item"><a class="popap-menu__link" href="">Contact</a></li>
+            </ul></nav>
         </header> 
     </div> 
     <main>
@@ -165,7 +174,7 @@
 </main>
 <div class="page__inner page__inner_footer page__inner_dark-2">
 <footer class="footer">
-    <p class="footer__copyright">&copy Copyright @Junaed 2016, All rights reserved.</p>
+    <p class="footer__copyright">&copy; Copyright @Junaed 2016, All rights reserved.</p>
     <section class="footer__social social">
         <a class="social__link" href="">
             <img class="social__logo" src="img/Twitter.svg" alt="Иконка твиттера">
@@ -182,5 +191,6 @@
     </section>
 </footer>
 </div>
+
     </body>
 </html>
