@@ -99,7 +99,7 @@ button {
 
 /* Header */
 .header {
-     position: fixed;
+  /* position: fixed; */
      display: flex;
      justify-content: center;
      width: 100%;
