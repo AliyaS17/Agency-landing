@@ -230,13 +230,13 @@ button {
      background-color: #ff3f40;
 }
 
+
+
 @media screen and(min-width: 800px) {
      .popap-menu {
           display: none;
-     }
-     
+     }     
 }
-
 
  /* Main */
  /* Intro */
@@ -272,8 +272,7 @@ button {
      .intro__info {
           width: 100%;
           margin-bottom: 80px;
-     }
-     
+     }     
 }
 
 .intro__heading {
