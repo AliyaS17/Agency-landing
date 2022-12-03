@@ -99,21 +99,31 @@ button {
 
 /* Header */
 .header {
-  /* position: fixed; */
      display: flex;
      justify-content: center;
      width: 100%;
      max-width: 1249px;
      min-height: 89px;
-     margin: 0 auto;
      background-color: rgba(0,0,0,0.8);
+}
+
+@media screen and (max-width: 800px) {
+     .header {
+          pozition: fixed;
+          top: 0;
+          z-index: 1; 
+     }
+     .page__inner_header {
+          padding-top: 40px;
+     }
+     
 }
 
 .site-menu {
      margin-left: -30px;
 }
 
-@media (max-width: 600px) {
+@media screen and (max-width: 600px) {
      .site-menu {
           margin-left: initial;    
 }
@@ -164,8 +174,7 @@ button {
 @media screen and (max-width: 800px) {
      .site-menu {
           display: none;
-     }
-     
+     }     
 }
 
 /*Popap-menu*/
@@ -205,10 +214,11 @@ button {
 .popap-menu__item {
      display: flex;
      min-height: 89px;
-     justify-content: center;
+     width: 100%;
 }
 
 .popap-menu__link {
+     width: 100%;
      display: flex;
      align-items: center;
      padding: 0 30px;
@@ -230,8 +240,6 @@ button {
      background-color: #ff3f40;
 }
 
-
-
 @media screen and(min-width: 800px) {
      .popap-menu {
           display: none;
@@ -251,8 +259,7 @@ button {
 @media screen and (min-width: 800px) and (max-width: 1240px) {
      .intro {
           flex-wrap: nowrap;
-     }
-     
+     }    
 }
 
 .intro__info {
@@ -264,8 +271,7 @@ button {
      .intro__info {
           width: 50%;
           margin-right: initial;
-     }
-     
+     }     
 }
 
 @media screen and (max-width: 800px) {
@@ -569,7 +575,7 @@ button {
      margin: 0 auto;
      padding: 0 1vw;
      padding-top: 65px;
-     padding-bottom: 53px;
+     padding-bottom: 110px;
      text-align: left;
 }
 
@@ -692,7 +698,7 @@ button {
      align-items: center;
 }    
 
-.team__other {
+.team__others {
      position: relative;       
 }
 
@@ -740,14 +746,11 @@ button {
           grid-row: auto;
      }
 
-     .team__others {
+     .team__other {
           justify-content: center;
           grid-column: 1 / 2;
           grid-row: auto;
-
-
-     }
-     
+     }    
 }
 
 /* Subscribe */
@@ -1002,6 +1005,7 @@ button {
 }
 
 .contacts__tel {
+     display: block;
      color: #fff;
      font-family:'Open Sans';
 }
