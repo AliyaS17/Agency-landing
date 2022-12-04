@@ -240,7 +240,7 @@ button {
      background-color: #ff3f40;
 }
 
-@media screen and(min-width: 800px) {
+@media screen and (min-width: 800px) {
      .popap-menu {
           display: none;
      }     
@@ -893,12 +893,12 @@ button {
 
 .feedback__body {
      display: flex;
-    /* justify-content: space-between;*/
-     flex-wrap: wrap;
-     display: grid;
-     grid-template-columns: 1fr 731px minmax(auto, 107px) 411px 1fr;
-     grid-template-rows: auto;
-}
+     /* justify-content: space-between;*/
+      flex-wrap: wrap;
+      display: grid;
+      grid-template-columns: 1fr 731px minmax(auto, 107px) 411px 1fr;
+      grid-template-rows: auto;
+ }
 
 @media (max-width: 1000px) {
      .feedback__body {
