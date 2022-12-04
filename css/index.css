@@ -352,8 +352,7 @@ button {
 @media screen and (max-width: 800px) {
      .intro__video {
           width: 100%;
-     }
-     
+     }    
 }
 
 /* Services */
@@ -484,7 +483,7 @@ button {
 }
 
 .feature__about {
-     width: 537px;
+     max-width: 500px;
      margin: 0 auto;
      margin-bottom: 34.5px;
      font-family:'Open Sans';
@@ -571,12 +570,16 @@ button {
 
 /* Team */
 .team {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-between;
+     align-items: flex-start;
      max-width: 1249px;
      margin: 0 auto;
-     padding: 0 1vw;
-     padding-top: 65px;
+     padding-top: 60px;
      padding-bottom: 110px;
-     text-align: left;
+     padding-left: 1vw;
+     padding-right: 1vw;
 }
 
 .team__header {
@@ -595,28 +598,32 @@ button {
 .team__about {
      font-family:'Open Sans';
      font-size: 15.9953px;
-     width: 450px;
+     max-width: 460px;
      margin: 0;
      margin-bottom: 39px;
 }
 
+@supports (display: grid) and (display: contents)
 .team__members {
-     display: flex;
      display: grid;
      grid-template-columns: repeat(2, auto);
      grid-template-rows: repeat(2, auto);
-     justify-content: space-between;
-     align-items: end;
-     column-gap: 2vw;
+}
+
+.team__members {
+     display: flex;
+     width: 100%;
+     flex-wrap: wrap;
+     align-items: stretch;
+     min-height: 458px;
 }
 
 .team__lead-photo {
+     flex-shrink: 0;
      width: 321px;
      height: 458px;
      margin-right: 65px;
      background-color: #eb6d4a8f;
-     object-position: bottom;
-     object-fit: contain;
      grid-column: 1 / 2;
      grid-row: 1 / 3;
 }
@@ -626,7 +633,7 @@ button {
      flex-direction: column;
 }
 
- @supports (display: contents) {
+@supports (display: contents) {
      .team__inner {
           display: contents;
      }
@@ -644,10 +651,16 @@ button {
 }
 
 .team__lead-main {
-     width: 631px;
+     position: relative;
+     display: flex;
+     flex-direction: column;
+     align-self: center;
+     justify-content: space-between;
+     max-width: 642px;
+     margin-top: -7px;
      grid-column: 2 / 3;
      grid-row: 1 / 2;
-     align-self: center;
+     
 }
 
 .team__lead-name {
@@ -664,7 +677,8 @@ button {
      font-family: 'Open Sans';
      font-size: 15.9953px;
      margin: 0;
-     margin-bottom: 46px;
+     line-height: 1.75;
+     margin-bottom: 34px;
 }
 
 .team__lead-social {
@@ -688,24 +702,28 @@ button {
 .team__lead-link:hover {
      text-decoration: underline;
 }
+
+@media and (max-width: 855px) 
+.team__others {
+     grid-column: 1 / 2;
+     grid-row: 3 / 4;    
+}
      
 .team__others {
      display: flex;
+     align-items: flex-end;
      flex-wrap: wrap;
-     gap: 20px;
      grid-column: 2 / 3;
      grid-row: 2 / 3;
-     align-items: center;
+     gap: 20px;
+     
 }    
-
-.team__others {
-     position: relative;       
-}
 
 .team__other-photo {
      display: block;
      width: 197px;
      height: 214px;
+     position: relative; 
      background-color: #d4dce680;      
 }
 
@@ -765,12 +783,18 @@ button {
 
 .subscribe__heading {
      color: #fff;
-     font-family: 'Open Sans';
-     font-size: 42px;
-     font-weight: 700;
-     line-height: 1.2;
+     opacity: 0.8;
+     text-transform: none;
+     margin-bottom: 30px;
+}
+
+.section-heading {
      margin: 0;
-     margin-bottom: 17px;
+     font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+     font-weight: 600;
+     font-size: 42px;
+     line-height: 55px;
+
 }
 
 .subscribe__about {
@@ -783,18 +807,35 @@ button {
 }
 
 .subscribe__form {
-     display: flex;
+     display: flex;;
      flex-wrap: wrap;
-     gap: 22px;    
+     align-items: baseline;
+     justify-content: center;
+     margin-top: 0em;    
 }
 
 .subscribe__email {
-     width: 521px;
-     height: 79px;
-     padding: 0 36px;
+     color: #8e8e8e;
+     display: flex;
+     align-items: center;
+     box-sizing: border-box;
+     flex: 0 1 521px;
+     min-height: 79px;
+     padding: 0;
+     padding-left: 35px;
+     padding-right: 35px;
      border: none;
      border-radius: 5px;
+     margin-right: 22px;
+     margin-bottom: 15px;
      background-color: #fff;
+}
+
+@media and (max-width: 350) {
+     .subscribe__button {
+          flex-wrap: nowrap
+     }
+     
 }
 
 .subscribe__button {
@@ -1002,12 +1043,14 @@ button {
      color: #fff;
      font-family:'Open Sans';
      margin-bottom: 20px;
+     text-decoration: none;
 }
 
 .contacts__tel {
      display: block;
      color: #fff;
      font-family:'Open Sans';
+     text-decoration: none;
 }
 
 @media screen and (max-width: 1248px) {
